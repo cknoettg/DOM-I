@@ -71,6 +71,13 @@ document.querySelectorAll(".main-content .top-content .text-content p")[1].textC
 
 document.querySelector("#middle-img").src = siteContent["main-content"]["middle-img-src"];
 
+document.querySelectorAll(".main-content .bottom-content .text-content h4")[0].textContent = siteContent["main-content"]["services-h4"];
+document.querySelectorAll(".main-content .bottom-content .text-content p")[0].textContent = siteContent["main-content"]["services-content"];
+document.querySelectorAll(".main-content .bottom-content .text-content h4")[1].textContent = siteContent["main-content"]["product-h4"];
+document.querySelectorAll(".main-content .bottom-content .text-content p")[1].textContent = siteContent["main-content"]["product-content"];
+document.querySelectorAll(".main-content .bottom-content .text-content h4")[2].textContent = siteContent["main-content"]["vision-h4"];
+document.querySelectorAll(".main-content .bottom-content .text-content p")[2].textContent = siteContent["main-content"]["vision-content"];
+
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
