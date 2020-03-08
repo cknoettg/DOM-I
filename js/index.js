@@ -48,9 +48,10 @@ const siteContent = {
 //   element.textContent = siteContent.nav["nav-item-1"];
 // });
 
-//loop through siteContent -hacky
+//loop through siteContent - hacky
 document.querySelectorAll('nav a').forEach((element, index) => {
   element.textContent = siteContent.nav[`nav-item-${index+1}`];
+  element.style.color = "green";
 });
 
 //using Object.keys() - failed experiment
@@ -87,7 +88,15 @@ document.querySelectorAll(".contact p")[2].textContent = siteContent["contact"][
 document.querySelector("footer p").textContent = siteContent.footer.copyright;
 
 //Update HTML with JSON data
+//actually, I already did that
 
+//Add new content - added green to loop above
+let creator = document.createElement('a');
+creator.textContent = "Append";
+let creator2 = creator.cloneNode(true);
+creator2.textContent = "Prepend"; 
+document.querySelector("nav").appendChild(creator);
+document.querySelector("nav").prepend(creator2);
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
