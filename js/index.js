@@ -84,6 +84,11 @@ document.querySelectorAll(".contact p")[0].textContent = siteContent["contact"][
 document.querySelectorAll(".contact p")[1].textContent = siteContent["contact"]["phone"];
 document.querySelectorAll(".contact p")[2].textContent = siteContent["contact"]["email"];
 
+document.querySelector("footer p").textContent = siteContent.footer.copyright;
+
+//Update HTML with JSON data
+
+
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
