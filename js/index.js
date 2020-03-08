@@ -37,6 +37,24 @@ const siteContent = {
   },
 };
 
+//Add content to selectors using DOM Manipulation
+
+// samples with single element to get warmed up
+// document.querySelector('nav a').textContent = "Services";
+// document.querySelector('nav a').textContent = siteContent.nav["nav-item-1"];
+
+//loop through all nav a's 
+// document.querySelectorAll('nav a').forEach((element, index) => {
+//   element.textContent = siteContent.nav["nav-item-1"];
+// });
+
+//loop through siteContent
+document.querySelectorAll('nav a').forEach((element, index) => {
+  element.textContent = siteContent.nav[`nav-item-${index+1}`];
+});
+
+
+
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
