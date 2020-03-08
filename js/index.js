@@ -48,11 +48,19 @@ const siteContent = {
 //   element.textContent = siteContent.nav["nav-item-1"];
 // });
 
-//loop through siteContent
+//loop through siteContent -hacky
 document.querySelectorAll('nav a').forEach((element, index) => {
   element.textContent = siteContent.nav[`nav-item-${index+1}`];
 });
 
+//using Object.keys() - failed experiment
+// document.querySelectorAll('nav a').keys(nav).forEach((element, index) => {
+//   element.textContent = siteContent.keys(nav);
+// });
+
+document.querySelector(".cta h1").textContent = siteContent.cta["h1"];
+document.querySelector(".cta button").textContent = siteContent.cta["button"];
+document.querySelector(".cta img").src = siteContent.cta["img-src"];
 
 
 // Example: Update the img src for the logo
