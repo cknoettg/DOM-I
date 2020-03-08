@@ -58,9 +58,18 @@ document.querySelectorAll('nav a').forEach((element, index) => {
 //   element.textContent = siteContent.keys(nav);
 // });
 
+//cta section
 document.querySelector(".cta h1").textContent = siteContent.cta["h1"];
 document.querySelector(".cta button").textContent = siteContent.cta["button"];
-document.querySelector(".cta img").src = siteContent.cta["img-src"];
+document.querySelector("#cta-img").src = siteContent.cta["img-src"];
+
+//main-content section - inefficient without loops
+document.querySelectorAll(".main-content .top-content .text-content h4")[0].textContent = siteContent["main-content"]["features-h4"];
+document.querySelectorAll(".main-content .top-content .text-content p")[0].textContent = siteContent["main-content"]["features-content"];
+document.querySelectorAll(".main-content .top-content .text-content h4")[1].textContent = siteContent["main-content"]["about-h4"];
+document.querySelectorAll(".main-content .top-content .text-content p")[1].textContent = siteContent["main-content"]["about-content"];
+
+document.querySelector("#middle-img").src = siteContent["main-content"]["middle-img-src"];
 
 
 // Example: Update the img src for the logo
