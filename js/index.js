@@ -101,3 +101,13 @@ document.querySelector("nav").prepend(creator2);
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//Stretch - Updating Styles
+document.body.style.backgroundColor = "grey";
+document.querySelectorAll("nav a").forEach((element) => {
+  element.style.color = "blue";
+});
+document.querySelector(".cta h1").style.color = "red";
+document.querySelector(".cta button").style.border = "2px solid blue";
+document.querySelector(".cta button").style.borderRadius = "5px";
+document.querySelector(".cta button").style.backgroundColor = "green";
