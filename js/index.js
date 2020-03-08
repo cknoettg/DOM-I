@@ -78,6 +78,11 @@ document.querySelectorAll(".main-content .bottom-content .text-content p")[1].te
 document.querySelectorAll(".main-content .bottom-content .text-content h4")[2].textContent = siteContent["main-content"]["vision-h4"];
 document.querySelectorAll(".main-content .bottom-content .text-content p")[2].textContent = siteContent["main-content"]["vision-content"];
 
+//contact section
+document.querySelector(".contact h4").textContent = siteContent["contact"]["contact-h4"];
+document.querySelectorAll(".contact p")[0].textContent = siteContent["contact"]["address"];
+document.querySelectorAll(".contact p")[1].textContent = siteContent["contact"]["phone"];
+document.querySelectorAll(".contact p")[2].textContent = siteContent["contact"]["email"];
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
