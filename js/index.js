@@ -43,7 +43,7 @@ const siteContent = {
 // document.querySelector('nav a').textContent = "Services";
 // document.querySelector('nav a').textContent = siteContent.nav["nav-item-1"];
 
-//loop through all nav a's 
+//loop through all nav a's - this starter produces first element only 
 // document.querySelectorAll('nav a').forEach((element, index) => {
 //   element.textContent = siteContent.nav["nav-item-1"];
 // });
@@ -53,18 +53,6 @@ document.querySelectorAll('nav a').forEach((element, index) => {
   element.textContent = siteContent.nav[Object.keys(siteContent.nav)[index]];
   element.style.color = "green";
 });
-
-//using Array.from - failed experiment
-//let els = document.querySelectorAll('nav a');
-//let els2 = Array.from(els);
-// for (let i=0;i<els.length;i++){
-//   els.textContent[i] = siteContent.nav[i];
-// }
-
-//using Object.keys() - failed experiment
-// document.querySelectorAll('nav a').keys(nav).forEach((element, index) => {
-//   element.textContent = siteContent.keys(nav);
-// });
 
 //cta section
 document.querySelector(".cta h1").textContent = siteContent.cta["h1"];
