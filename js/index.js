@@ -48,11 +48,18 @@ const siteContent = {
 //   element.textContent = siteContent.nav["nav-item-1"];
 // });
 
-//loop through siteContent - hacky
+//loop through siteContent
 document.querySelectorAll('nav a').forEach((element, index) => {
-  element.textContent = siteContent.nav[`nav-item-${index+1}`];
+  element.textContent = siteContent.nav[Object.keys(siteContent.nav)[index]];
   element.style.color = "green";
 });
+
+//using Array.from - failed experiment
+//let els = document.querySelectorAll('nav a');
+//let els2 = Array.from(els);
+// for (let i=0;i<els.length;i++){
+//   els.textContent[i] = siteContent.nav[i];
+// }
 
 //using Object.keys() - failed experiment
 // document.querySelectorAll('nav a').keys(nav).forEach((element, index) => {
